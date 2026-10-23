@@ -23,4 +23,15 @@ This project demonstrates connectivity between two AWS VPCs using VPC Peering, p
 Screenshots and the final project report will be added to this repository.
 
 ## Security
-Private keys, passwords, and AWS credentials are not included in this repository.
+Private keys, passwords, and AWS credentials are not included in this repository
+
+## Cleanup and Evidence Notes
+
+AWS lab resources were deleted after the connectivity tests.
+
+The recorded validation included:
+- App-A to App-B private-IP ping: successful
+- App-B to App-A private-IP ping: successful
+- SSH access to App-B through the bastion: successful
+
+The controlled ICMP failure-and-recovery test was not captured in the available evidence.
